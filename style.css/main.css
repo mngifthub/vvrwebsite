@@ -1,0 +1,199 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Roboto', sans-serif;
+}
+
+.innervraper{
+    width:95%;
+    max-width: 1444px;
+    margin:0 auto; 
+
+}
+
+.banner{
+    min-height:100vh;
+     background-image:url('../images/desktop/image-hero.jpg');
+     background-size: cover;
+     background-position: center;
+     display: flex; 
+     align-items:center;
+
+} 
+.bannertext{
+    border: 2px solid white;
+    width: 50%;
+    padding: 20px;
+}
+.bannertext >h1{
+    color: white;
+    font-weight:300; 
+    font-size: 50px;
+    text-transform: uppercase;
+} 
+
+.pageHeader{
+    position: fixed; 
+    width: 100%;
+    padding:20px 0;   
+    z-index: 100; 
+} 
+.pageHeader > div {
+    display: flex; 
+    align-items: center;
+    justify-content: space-between;
+}
+
+.mainMenu{
+    display: flex;
+    gap: 15px;
+    list-style: none; 
+}
+
+.mainMenu a {
+color: rgb(158, 234, 236);
+font-size: 13px;
+text-decoration: none; 
+}
+
+.aboutSection > div {
+ display: flex;
+ align-items: center;
+ justify-content: center;
+ margin: 80px auto;
+}
+
+.aboutImage{
+    width: 50%;
+    left: 80px;
+}
+
+.abouttext{ 
+ background-color: rgb(255, 255, 255);
+ padding: 50px;
+ position: relative;
+ top:50px;
+ left:-130px;
+} 
+
+.abouttext > h2 {
+    text-transform: uppercase;
+font-size: 32px;
+font-weight: 300;  
+margin-bottom: 15px; 
+} 
+.abouttext > p{
+font-size: 13px;
+color: black;
+}
+
+.portfolioGallery{
+    display: flex;
+    flex-wrap: wrap; 
+    align-items: center;
+    gap: 15px;
+    justify-content: space-between;
+}
+
+.portfolioGallery div {
+    width: 22%;
+    position: relative
+}
+
+.portfolioGallery h3 {
+    position: absolute;
+    bottom: 20px;
+    left: 20px; 
+    color: rgb(49, 47, 47);
+    text-transform: uppercase;
+    font-weight: 300;
+    font-size: 25px;
+    width: 60%;
+} 
+
+.portfolioGallery img{
+    width: 100%;
+}
+
+.portfoliotitle {
+    display: flex;
+    justify-content: space-between; 
+    margin-bottom: 30px;
+}
+
+.portfoliotitle > button{
+    border: 2px solid grey;
+    width: 60px; 
+    background-color: transparent;
+    height: 40px;
+}
+
+.portfoliotitle > button:active {
+    background-color: black;
+    color: white;
+}
+
+.portfoliotitle > h2 {
+text-transform: uppercase;
+font-size: 32px;
+font-weight: 300;
+} 
+
+.pageFooter {
+    background-color: black;
+    padding: 25px 0;
+    margin-top: 25px; 
+
+}
+
+.footerTop {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footerTop > img {
+    width: 60%;
+}
+
+.footerTop > div img {
+    width: 20px;
+    margin-left: 10px;
+}
+
+.footerBottom {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px; 
+}
+
+.footerBottom > span {
+    font-size: 13px;
+    color: white;
+}
+
+@media (max-width: 992px) {
+    .abouttext {
+        position:initial; 
+    }
+    .aboutSection > div {
+        flex-direction: column;
+    }
+    .aboutSection img {
+        width: 85%;
+
+    }
+    }
+
+
+@media (max-width: 768px) {
+    .bannertext {
+        width:initial;
+        min-width: 50%;
+    }
+}
+
